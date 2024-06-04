@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Регистрация</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/Логотип.png" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <div class="container-one">
+      <div class="bloc-logo">
+        <a href="../index.html"><img src="img/Логотип.png" alt="logo" height="80"></a>
+        <p>ГБУЗ РХ «Республиканская клиническая больница им. Г.Я. Ремишевской»</p>
+      </div>
+      <div class="bloc-tele">
+        <p>Справочная служба ГБУЗ РХ "РКБ имени Г.Я. Ремишевской": <br>
+          8-800-707-51-20 (звонок бесплатный) <br>
+          8 (3902) 248-254</p>
+      </div>
+    </div>
+    <div class="con-hed">
+      <nav>
+        <a href="https://resbol.mz19.ru/org/about/documents/">Об организации</a>
+        <a href="https://resbol.mz19.ru/org/service/perechen-uslug/">Услуги</a>
+        <a href="../Specialists/specialists.html">Специалисты</a>
+        <a href="https://resbol.mz19.ru/org/patient/prava-grazhdan/prava-i-obyazannosti-grazhdan.php">Пациенту</a>
+        <a href="../Login/login.html">Личный кабинет</a>
+      </nav>
+    </div>
+  </header>
+  <div class="main">
+    <div class="maiim">
+      <section>
+        <form id="registrationForm">
+          <h1>Регистрация</h1>
+          <div class="field">
+            <label for="firstName">Имя:</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Антон" required>
+            <p id="errorFirstName"></p><br>
+          </div>
+          <div class="field">
+            <label for="lastName">Фамилия:</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Антонов" required>
+            <p id="errorLastName"></p><br>
+          </div>
+          <div class="field">
+            <label for="middleName">Отчество:</label>
+            <input type="text" id="middleName" name="middleName" placeholder="Антонович">
+            <p id="errorMiddleName"></p><br>
+          </div>
+          <div class="field">
+            <label for="tele">Телефон:</label>
+            <input type="text" id="tele" name="tele" placeholder="+7 (___) ___-____" required>
+            <p id="errorTele"></p><br>
+          </div>
+          <div class="field">
+            <label for="dob">Дата рождения:</label>
+            <input type="date" id="dob" name="dob" min="1920-01-01" max="2018-12-31" required>
+            <p id="errorDob"></p><br>
+          </div>
+          <p class="p">Паспортные данные</p> <br>
+          <div class="field">
+            <label for="seria">Серия:</label>
+            <input type="text" id="seria" name="seria" required>
+            <p id="errorSeria"></p><br>
+          </div>
+          <div class="field">
+            <label for="nomer">Номер:</label>
+            <input type="text" id="nomer" name="nomer" required>
+            <p id="errorNomer"></p><br>
+          </div>
+          <div class="field">
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" minlength="8" required>
+            <p id="errorPassword"></p><br>
+          </div>
+          <div class="field">
+            <label for="confirmPassword">Повтор пароля:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <p id="errorConfirmPassword"></p><br>
+          </div>
+          <button id="registerButton" type="submit">Зарегистрироваться</button>
+        </form>
+      </section>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer__addr">
+      <img class="footer__logo" src="img/Логотип.png" alt="logo" height="80">
+      <h4>Контакты</h4>
+      <p>8-800-707-51-20</p>
+    </div>
+    <ul class="footer__nav">
+      <li class="nav__item">
+        <h4 class="nav__title">Меню</h4>
+        <ul class="nav__ul">
+          <li>
+            <a href="https://resbol.mz19.ru/org/about/documents/">Об организации</a>
+          </li>
+          <li>
+            <a href="https://resbol.mz19.ru/org/service/perechen-uslug/">Услуги</a>
+          </li>
+          <li>
+            <a href="../Login/login.html">Личный кабинет</a>
+          </li>
+          <li>
+            <a href="../Specialists/specialist.html">Специалисты</a>
+          </li>
+          <li>
+            <a href="https://resbol.mz19.ru/org/patient/prava-grazhdan/prava-i-obyazannosti-grazhdan.php">Пациенту</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav__item nav__item--extra">
+        <h4 class="nav__title">Документы</h4>
+        <ul class="nav__ul nav__ul--extra">
+          <li>
+            <a href="#">Политика конфиденциальности</a>
+          </li>
+          <li>
+            <a href="#">Пользовательское соглашение</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav__item">
+        <h4 class="nav__title">Мы тут</h4>
+        <ul class="nav__ul">
+          <li>
+            <a href="https://vk.com/gbuz_rkb"><img src="img/icon/вк.png" alt="vk" height="20"> ВКонтакте</a>
+          </li>
+          <li>
+            <a href="#"><img src="img/icon/телега.png" alt="tg" height="20"> Телеграмм</a>
+          </li>
+          <li>
+            <a href="https://2gis.ru/abakan/firm/9711414977495994/91.466033%2C53.724356?m=91.466205%2C53.723226%2F16">Адресс</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <div class="legal">
+      <p>&copy; ГБУЗ РХ "РКБ имени Г.Я. Ремишевской" 2024</p>
+    </div>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
